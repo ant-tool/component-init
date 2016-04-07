@@ -45,4 +45,4 @@ Doc-build.
 $ npm run doc-build
 ```
 
-[More Info about useage](./boilerplate/info.md)
+[More Info about usage](./boilerplate/info.md)
