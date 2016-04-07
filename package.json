@@ -1,0 +1,28 @@
+{
+  "name": "component-init",
+  "version": "0.1.0",
+  "description": "Component generator by using ant tool structure.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-tool/component-init"
+  },
+  "homepage": "https://github.com/ant-tool/component-init",
+  "mai": "pigcan <jiangjay818@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "component-init": "./bin/component-init"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts"
+  },
+  "dependencies": {
+    "through2": "2.0.x",
+    "vinyl-fs": "2.4.x",
+    "which": "1.2.x"
+  },
+  "devDependencies": {
+    "coffee": "2",
+    "mocha": "2",
+    "rimraf": "~2.4.4"
+  }
+}
