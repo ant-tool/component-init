@@ -46,7 +46,7 @@
   ```js
 
 "scripts": {
-  "transpiler": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
+  "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
   "build": "atool-build",
   "lint": "eslint --ext .js src",
   "test": "atool-test",
@@ -63,7 +63,7 @@
 
 
 
-* `transpiler` es6 -> es5, less -> css
+* `compile` es6 -> es5, less -> css
 * `build` Deploy to CDN, you have to compile code by using atool-build
 * `lint` run eslint
 * `test` run test cases 

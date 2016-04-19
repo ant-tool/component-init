@@ -14,7 +14,7 @@
     "index": "./index"
   },
   "scripts": {
-    "transpiler": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
+    "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
     "build": "atool-build",
     "lint": "eslint --ext .js src",
     "test": "atool-test",
