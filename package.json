@@ -1,6 +1,6 @@
 {
   "name": "component-init",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Component generator by using ant tool structure.",
   "repository": {
     "type": "git",

@@ -2,6 +2,9 @@
 
 ---
 
+## 0.2.0
+
+using compile instead of transpiler
 
 ## 0.1.0
 
