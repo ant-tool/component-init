@@ -2,6 +2,10 @@
 
 ---
 
+## 0.2.1
+
+add .eslintrc
+
 ## 0.2.0
 
 using compile instead of transpiler
