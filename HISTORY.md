@@ -2,6 +2,13 @@
 
 ---
 
+## 0.2.2
+
+add babel-preset-react
+add eslint parser babel-eslint
+modify eslint extends from eslint-config-airbnb/base to eslint-config-airbnb
+
+
 ## 0.2.1
 
 add .eslintrc
