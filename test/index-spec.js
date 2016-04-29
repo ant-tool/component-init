@@ -27,8 +27,8 @@ describe('component-init', function() {
       .end(done);
   });
 
-  it('run transpiler', function(done) {
-    coffee.spawn('npm', 'run transpiler'.split(' '))
+  it('run compile', function(done) {
+    coffee.spawn('npm', 'run compile'.split(' '))
       .expect('stdout', [/src\/component\.js -> lib\/component\.js/, /src\/index\.js -> lib\/index\.js/])
       .expect('stderr', '')
       .debug()
@@ -37,7 +37,7 @@ describe('component-init', function() {
 
   it('run build', function(done) {
     coffee.spawn('npm', 'run build'.split(' '))
-      .expect('stdout', [/atool-build/, /Time:/])
+      .expect('stdout', [/atool-build/, /Time/])
       .expect('stderr', '')
       .debug()
       .end(done);
@@ -45,8 +45,7 @@ describe('component-init', function() {
 
   it('run test', function(done) {
     coffee.spawn('npm', 'run test'.split(' '))
-      .expect('stdout', [/dora: listened on 9876/, /webpack: bundle build is now finished\./, /1 passing/,
-        /You can see more detail in coverage\/report-html\/index\.html/])
+      .expect('stdout', [/dora: listened on 9876/, /webpack: bundle build is now finished\./, /1 passing/])
       .expect('stderr', '')
       .debug()
       .end(done);
