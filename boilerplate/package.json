@@ -18,6 +18,7 @@
     "build": "atool-build",
     "lint": "eslint --ext .js src",
     "test": "atool-test-mocha --recursive tests",
+    "coverage": "atool-test-mocha --coverage --recursive tests",
     "doc": "atool-doc",
     "doc-build": "atool-doc --build",
     "gh-pages": "atool-doc --build && gh-pages -d __site"
