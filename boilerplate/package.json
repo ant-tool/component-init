@@ -29,7 +29,7 @@
   "devDependencies": {
     "atool-build": "0.6.x",
     "atool-doc": "^0.1.0",
-    "atool-test-mocha": "~0.1.0",
+    "atool-test-mocha": "~0.1.4",
     "babel-cli": "~6.6.4",
     "babel-core": "~6.7.4",
     "babel-eslint": "~6.0.2",
