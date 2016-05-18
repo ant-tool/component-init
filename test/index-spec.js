@@ -45,7 +45,7 @@ describe('component-init', function() {
 
   it('run test', function(done) {
     coffee.spawn('npm', 'run test'.split(' '))
-      .expect('stdout', [/dora: listened on 9876/, /webpack: bundle build is now finished\./, /1 passing/])
+      .expect('stdout', [/3 passing/])
       .expect('stderr', '')
       .debug()
       .end(done);
