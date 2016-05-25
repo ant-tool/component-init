@@ -1,5 +1,5 @@
 publish:
-	npm run transpiler
+	npm run compile
 	npm publish
 
 publish-sync: publish
