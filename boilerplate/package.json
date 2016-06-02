@@ -13,6 +13,9 @@
   "entry": {
     "index": "./index"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
     "build": "atool-build",
