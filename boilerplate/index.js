@@ -1,4 +1,4 @@
-import ComponentName from './src/';
-require('./src/index.less');
+var ComponentName = require('./lib/');
+require('./lib/index.css');
 
-export default ComponentName;
+exports.default = ComponentName;

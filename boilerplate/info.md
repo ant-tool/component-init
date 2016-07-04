@@ -14,6 +14,7 @@
 ├── .gitignore
 ├── .npmignore
 ├── index.js
+├── cdn.js
 ├── package.json
 ├── src
 │   ├── component.js
@@ -32,7 +33,8 @@
 * `examples` Doc dir/ .md file is the best practice.
 * `.gitignore` git push ignore files
 * `.npmignore` npm publish ignore files
-* `index.js` Deploy to CDN 
+* `cdn.js` Deploy to CDN 
+* `index.js` use as npm modules
 * `package.json`
 * `src` Source dir
 * `tests` Test cases `*-test.js`
@@ -46,6 +48,7 @@
   ```js
 
 "scripts": {
+  "start": "concurrently 'npm run compile' 'npm run doc'",
   "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
   "build": "atool-build",
   "lint": "eslint --ext .js src",
@@ -54,15 +57,15 @@
   "doc-build": "atool-doc --build",
   "gh-pages": "atool-doc --build && gh-pages -d __site"
 },
-"main": "./lib/index",
+"main": "./index",
 "entry": {
-  "index": "./index"
+  "index": "./cdn"
 }
 
 ```
 
 
-
+* `start` concurrently compile and doc
 * `compile` es6 -> es5, less -> css
 * `build` Deploy to CDN, you have to compile code by using atool-build
 * `lint` run eslint

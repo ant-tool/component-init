@@ -9,9 +9,9 @@
     "url": ""
   },
   "bugs": "issues url",
-  "main": "./lib/index",
+  "main": "./index",
   "entry": {
-    "index": "./index"
+    "index": "./cdn"
   },
   "scripts": {
     "start": "concurrently 'npm run compile' 'npm run doc'",
