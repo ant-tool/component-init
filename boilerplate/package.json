@@ -17,7 +17,8 @@
     "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
     "build": "atool-build",
     "lint": "eslint --ext .js src",
-    "test": "atool-test",
+    "test": "atool-test-mocha --recursive tests",
+    "coverage": "atool-test-mocha --coverage --recursive tests",
     "doc": "atool-doc",
     "doc-build": "atool-doc --build",
     "gh-pages": "atool-doc --build && gh-pages -d __site"
@@ -28,7 +29,7 @@
   "devDependencies": {
     "atool-build": "0.6.x",
     "atool-doc": "^0.1.0",
-    "atool-test": "^0.4.5",
+    "atool-test-mocha": "~0.1.4",
     "babel-cli": "~6.6.4",
     "babel-core": "~6.7.4",
     "babel-eslint": "~6.0.2",
