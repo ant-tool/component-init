@@ -1,5 +1,5 @@
 var ComponentName = require('./lib/');
 require('./lib/index.css');
 
-exports.default = ComponentName.default;
+exports.default = ComponentName;
 module.exports = exports['default'];
