@@ -13,6 +13,9 @@
   "entry": {
     "index": "./cdn"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "concurrently 'npm run compile' 'npm run doc'",
     "compile": "rm -rf lib && babel src --out-dir lib && lessc src/index.less lib/index.css",
